@@ -9,6 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('twoohfoureightApp', [
-    'ngCookies'
-  ]);
+  .module('twoohfoureightApp', ['ngCookies'])
+  .controller('GameController', function() {
+    this.game = GameManager;
+});
